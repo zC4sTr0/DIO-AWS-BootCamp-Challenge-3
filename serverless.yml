@@ -32,6 +32,12 @@ functions:
       - http:
           path: /item
           method: post
+  fetchItems: 
+    handler: src/fetchItems.handler
+    events:
+      - http:
+          path: /fetchItems
+          method: get
 
 resources:
   Resources:
